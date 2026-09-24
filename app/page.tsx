@@ -28,7 +28,7 @@ export default function Home() {
               <div className="section-label"><span className="number">0{index + 1}</span><h2 id={`${section.id}-title`}>{section.title}</h2></div>
               <div className="section-body">
                 <p className="section-description">{section.description}</p>
-                {section.id === 'research' ? <Research /> : section.items.length ? section.items.map((item, i) => <article className="entry" key={i}><h3>{item.title}</h3><p>{item.description}</p></article>) : <div className="placeholder"><span className="placeholder-mark" aria-hidden="true">+</span><div><h3>{section.placeholder}</h3><p>Details forthcoming.</p></div></div>}
+                {section.id === 'research' ? <Research /> : section.items.length ? section.items.map((item, i) => <article className="entry" key={i}><h3>{item.title}</h3><p>{item.description}{item.link && <> <a href={item.link.url}>{item.link.label}</a>.</>}</p></article>) : <div className="placeholder"><span className="placeholder-mark" aria-hidden="true">+</span><div><h3>{section.placeholder}</h3><p>Details forthcoming.</p></div></div>}
               </div>
             </section>
           ))}
