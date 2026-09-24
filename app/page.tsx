@@ -8,7 +8,7 @@ export default function Home() {
       <header className="header">
         <a className="wordmark" href="#home" aria-label="Dr Zoe Hoare home">Zoe Hoare</a>
         <nav aria-label="Main navigation">
-          <a href="#research">Research</a><a href="#interests">Interests</a><a href="#funding">Grant funding</a>
+          <a href="#research">Research</a><a href="#writing">Writing</a><a href="#interests">Interests</a><a href="#funding">Grant funding</a>
         </nav>
       </header>
       <main id="main">

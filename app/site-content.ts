@@ -10,6 +10,29 @@ export const sections: Section[] = [
     items: [],
   },
   {
+    id: 'writing',
+    title: 'Writing',
+    description: 'Writing on mitochondria, metabolism and the importance of energy in health and disease.',
+    placeholder: 'Writing pieces',
+    items: [
+      {
+        title: '‘Mitomaxxing’ - Should we push our mitochondria harder to drive weight loss?',
+        titleUrl: 'https://zoehoare.substack.com/p/mitomaxxing-should-we-push-our-mitochondria',
+        description: 'Read on Substack',
+      },
+      {
+        title: 'Mitochondrial Phenotyping Will Improve Drug Discovery',
+        titleUrl: 'https://zoehoare.substack.com/p/mitochondrial-phenotyping-will-improve',
+        description: 'Read on Substack',
+      },
+      {
+        title: 'Running on Empty - The Importance of Energy in Disease',
+        titleUrl: 'https://zoehoare.substack.com/p/running-on-empty-the-importance-of',
+        description: 'Read on Substack',
+      },
+    ],
+  },
+  {
     id: 'interests',
     title: 'Interests',
     description: 'Ideas, questions and interests beyond individual research projects.',
