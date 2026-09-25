@@ -18,17 +18,17 @@ export const sections: Section[] = [
       {
         title: '‘Mitomaxxing’ - Should we push our mitochondria harder to drive weight loss?',
         titleUrl: 'https://zoehoare.substack.com/p/mitomaxxing-should-we-push-our-mitochondria',
-        description: 'Read on Substack',
+        description: 'Following appetite suppression drugs, a new wave of therapies that target energy expenditure are emerging. Could mitochondrial uncouplers be the next step in sustainable weight loss?',
       },
       {
         title: 'Mitochondrial Phenotyping Will Improve Drug Discovery',
         titleUrl: 'https://zoehoare.substack.com/p/mitochondrial-phenotyping-will-improve',
-        description: 'Read on Substack',
+        description: 'Why measuring mitochondrial function will transform how we develop, evaluate, and personalise medicines for complex diseases.',
       },
       {
         title: 'Running on Empty - The Importance of Energy in Disease',
         titleUrl: 'https://zoehoare.substack.com/p/running-on-empty-the-importance-of',
-        description: 'Read on Substack',
+        description: 'A mitochondrial paradigm for complex diseases',
       },
     ],
   },
