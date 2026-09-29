@@ -10,7 +10,6 @@ All page text is plain HTML in `content/`:
 | `content/research.html` | Research and publications |
 | `content/writing.html` | Writing |
 | `content/interests.html` | Interests |
-| `content/funding.html` | Grant funding |
 | `content/navigation.html` | Navigation links on every page |
 
 Open the relevant HTML file and edit the text directly. These files contain the

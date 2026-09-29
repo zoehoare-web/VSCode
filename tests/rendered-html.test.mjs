@@ -8,7 +8,6 @@ const pages = [
   ['/research', 'research', 'Research'],
   ['/writing', 'writing', 'Writing'],
   ['/interests', 'interests', 'Interests'],
-  ['/funding', 'funding', 'Grant funding'],
 ];
 
 for (const [path, file, heading] of pages) {
@@ -35,3 +34,14 @@ for (const [path, file, heading] of pages) {
     }
   });
 }
+
+test('the homepage grant-management link points directly to the BHF research page', async () => {
+  const response = await worker.fetch(
+    new Request('http://localhost/', { headers: { accept: 'text/html' } }),
+    { ASSETS: { fetch: async () => new Response('Not found', { status: 404 }) } },
+    { waitUntil() {}, passThroughOnException() {} },
+  );
+  const html = await response.text();
+  assert.ok(html.includes('href="https://www.bhf.org.uk/what-we-do/our-research"'));
+  assert.ok(!html.includes('href="/funding"'));
+});
