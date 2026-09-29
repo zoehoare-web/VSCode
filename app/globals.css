@@ -142,6 +142,24 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
   color: #4c4c55;
   font-size: 0.94rem;
 }
+.writing-list {
+  margin-top: 28px;
+  border-top: 1px solid #d9d9e2;
+}
+.writing-list article {
+  margin: 0;
+  padding: 28px 0;
+  border-bottom: 1px solid #e8e8ee;
+}
+.writing-list h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+.writing-list p {
+  margin: 0;
+  color: #4c4c55;
+  font-size: 0.94rem;
+}
 
 @media (max-width: 620px) {
   .home-layout {
