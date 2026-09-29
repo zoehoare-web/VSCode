@@ -1,0 +1,17 @@
+{
+  "name": "Dr Zoe Hoare",
+  "short_name": "Zoe Hoare",
+  "description": "Cardiac metabolism scientist interested in fixing mitochondrial dysfunction",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/cartoon-headshot.jpg",
+      "sizes": "400x400",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

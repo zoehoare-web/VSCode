@@ -1,11 +1,21 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import navigation from '../content/navigation.html?raw';
 import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zoehoare.xyz'),
+  applicationName: 'Dr Zoe Hoare',
   title: 'Dr Zoe Hoare | Cardiac metabolism scientist',
   description: 'Cardiac metabolism scientist interested in fixing mitochondrial dysfunction',
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    capable: true,
+    title: 'Dr Zoe Hoare',
+    statusBarStyle: 'default',
+  },
+  formatDetection: {
+    telephone: false,
+  },
   icons: {
     icon: '/cartoon-headshot.jpg',
     apple: '/cartoon-headshot.jpg',
@@ -31,6 +41,13 @@ export const metadata: Metadata = {
     description: 'Cardiac metabolism scientist interested in fixing mitochondrial dysfunction',
     images: ['/cartoon-headshot.jpg'],
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
