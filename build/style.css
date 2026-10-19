@@ -18,7 +18,7 @@ body {
   padding: 36px 20px 52px;
   color: var(--ink);
   background: #fff;
-  font: 18px/1.65 Georgia, "Times New Roman", serif;
+  font: 18px/1.65 "Times New Roman", Times, serif;
 }
 
 nav {
