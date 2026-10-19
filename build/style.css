@@ -110,10 +110,13 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .outputs h3 { margin-top: 8px; }
 .outputs li > p:last-child { margin: 10px 0 0; color: #4c4c55; font-size: .94rem; }
 
-.writing-list { margin-top: 28px; border-top: 1px solid #d9d9e2; }
-.writing-list article { padding: 28px 0; border-bottom: 1px solid #e8e8ee; }
+.writing-list,
+.interest-list { margin-top: 28px; border-top: 1px solid #d9d9e2; }
+.writing-list article,
+.interest-list article { padding: 28px 0; border-bottom: 1px solid #e8e8ee; }
 .writing-list h2 { margin: 0 0 10px; font-size: 1.1rem; }
 .writing-list p { margin: 0; color: #4c4c55; font-size: .94rem; }
+.interest-list h3 { margin-top: 0; }
 
 @media (max-width: 620px) {
   .home { display: block; }
