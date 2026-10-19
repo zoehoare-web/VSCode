@@ -16,6 +16,10 @@ body {
   max-width: 740px;
   margin: 0 auto;
   padding: 36px 20px 52px;
+  padding-top: max(36px, env(safe-area-inset-top));
+  padding-right: max(20px, env(safe-area-inset-right));
+  padding-bottom: max(52px, env(safe-area-inset-bottom));
+  padding-left: max(20px, env(safe-area-inset-left));
   color: var(--ink);
   background: #fff;
   font: 18px/1.65 "Times New Roman", Times, serif;
@@ -31,7 +35,7 @@ nav {
 
 nav a {
   display: inline-flex;
-  min-height: 40px;
+  min-height: 44px;
   align-items: center;
   color: var(--ink);
   text-decoration-color: #a8afb3;
@@ -59,6 +63,8 @@ li { margin: 12px 0; }
 a {
   color: var(--accent);
   overflow-wrap: anywhere;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(63, 88, 107, .16);
   text-decoration-thickness: .06em;
   text-underline-offset: .14em;
 }
@@ -171,12 +177,23 @@ footer {
 }
 
 footer p { margin: 0; }
-footer a { white-space: nowrap; }
+footer a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  white-space: nowrap;
+}
 
 @media (max-width: 620px) {
-  body { padding: 24px 18px 40px; font-size: 17px; }
+  body {
+    padding: 24px 18px 40px;
+    padding-top: max(24px, env(safe-area-inset-top));
+    padding-right: max(18px, env(safe-area-inset-right));
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+    padding-left: max(18px, env(safe-area-inset-left));
+    font-size: 17px;
+  }
   nav { gap: 2px 18px; }
-  nav a { min-height: 38px; }
   main { margin-top: 38px; }
   .home { display: block; }
   .portrait { float: right; width: 112px; height: 112px; margin: 0 0 16px 22px; }
