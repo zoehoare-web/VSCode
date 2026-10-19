@@ -162,6 +162,17 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 }
 .interest-list h3 { margin-top: 0; }
 
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+footer p { margin: 0; }
+footer a { white-space: nowrap; }
+
 @media (max-width: 620px) {
   body { padding: 24px 18px 40px; font-size: 17px; }
   nav { gap: 2px 18px; }
