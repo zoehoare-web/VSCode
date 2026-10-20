@@ -28,7 +28,8 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 24px;
+  justify-content: space-between;
+  gap: 2px clamp(10px, 4vw, 28px);
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
 }
@@ -212,7 +213,7 @@ footer a {
     padding-left: max(18px, env(safe-area-inset-left));
     font-size: 17px;
   }
-  nav { gap: 2px 18px; }
+  nav { gap: 2px 10px; }
   .site-banner { height: 72px; margin-bottom: 14px; }
   main { margin-top: 38px; }
   .home { display: block; }
